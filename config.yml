@@ -1,0 +1,117 @@
+#MoneyPouch configuration 2.1
+help:
+ - '&8&m-----------------'
+ - '&9&lMoneyPouches'
+ - '&8» &7/mp <tier> <player> [amount] &8-&7 Receive a MoneyPouch.'
+ - '&8» &7/mp list &8- &7Open List of MoneyPouches.'
+ - '&8» &7/mp reload &8- &7Reloads the config.'
+ - '&8&m-----------------'
+pouches:
+  tier:
+    Common:
+      name: '&9&lCOMMON &8» &fMoney Pouch'
+      item: 'ENDER_CHEST'
+      pricerange:
+        from: '100000000000'
+        to: '1000000000000'
+      lore:
+        - ''
+        - '&8* &9&lTIER 1'
+        - ''
+        - '&8* &7Reward:'
+        - '&a$&f100 Billion &8- &a$&f1 Trillion'
+        - ''
+        - '&7&o(( Place down to open! ))'
+    Uncommon:
+      name: '&2&lUNCOMMON &8» &fMoney Pouch'
+      item: 'ENDER_CHEST'
+      pricerange:
+        from: '1000000000000'
+        to: '4000000000000'
+      lore:
+        - ''
+        - '&8* &9&lTIER 2'
+        - ''
+        - '&8* &7Reward:'
+        - '&a$&f1 Trillion &8- &a$&f4 Trillion'
+        - ''
+        - '&7&o(( Place down to open! ))'
+    Rare:
+      name: '&5&lRARE &8» &fMoney Pouch'
+      item: 'ENDER_CHEST'
+      pricerange:
+        from: '3000000000000'
+        to: '6000000000000'
+      lore:
+        - ''
+        - '&8* &9&lTIER 3'
+        - ''
+        - '&8* &7Reward:'
+        - '&a$&f3 Trillion &8- &a$&f6 Trillion'
+        - ''
+        - '&7&o(( Place down to open! ))'
+    UltraRare:
+      name: '&d&lULTRA RARE &8» &fMoney Pouch'
+      item: 'ENDER_CHEST'
+      pricerange:
+        from: '10000000000000'
+        to: '25000000000000'
+      lore:
+        - ''
+        - '&8* &9&lTIER 4'
+        - ''
+        - '&8* &7Reward:'
+        - '&a$&f10 Trillion &8- &a$&f25 Trillion'
+        - ''
+        - '&7&o(( Place down to open! ))'
+    Epic:
+      name: '&b&lEPIC &8» &fMoney Pouch'
+      item: 'ENDER_CHEST'
+      pricerange:
+        from: '100000000000000'
+        to: '250000000000000'
+      lore:
+        - ''
+        - '&8* &9&lTIER 5'
+        - ''
+        - '&8* &7Reward:'
+        - '&a$&f100 Trillion &8- &a$&f250 Trillion'
+        - ''
+        - '&7&o(( Place down to open! ))'
+    Legendary:
+      name: '&c&lLEGENDARY &8» &fMoney Pouch'
+      item: 'ENDER_CHEST'
+      pricerange:
+        from: '1000000000000000'
+        to: '3000000000000000'
+      lore:
+        - ''
+        - '&8* &9&lTIER 6'
+        - ''
+        - '&8* &7Reward:'
+        - '&a$&f1 Quadrillion &8- &a$&f3 Quadrillion'
+        - ''
+        - '&7&o(( Place down to open! ))'
+  sound:
+    enabled: true
+    opensound: 'CHEST_OPEN'
+    revealsound: 'ANVIL_LAND'
+    endsound: 'EXPLODE'
+  title:
+    speedintick: 1
+    format: true
+shop:
+  enabled: false
+  buyable:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+  prices:
+    1: 6000
+    2: 30000
+    3: 110000
+    4: 380000
+    5: 1200000
+  inventoryname: '&9Pouch Dealer'
